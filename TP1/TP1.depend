@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1599937704 source:c:\users\user\desktop\tp_laboratorio_1\tp1\main.c
+	<stdio.h>
+	<stdlib.h>
+	"funmate.h"
+
+1599936511 source:c:\users\user\desktop\tp_laboratorio_1\tp1\funmate.c
+	"funmate.h"
+
+1599936458 c:\users\user\desktop\tp_laboratorio_1\tp1\funmate.h
+
