@@ -1,6 +1,6 @@
 /*
  ============================================================================
- Name        : practica.c
+ Name        : Silva Nahuel 1b
  Author      : 
  Version     :
  Copyright   : Your copyright notice
