@@ -16,6 +16,7 @@ int Suma(int num1, int num2);
 int Resta(int num1, int num2);
 int Multiplicacion(int num1, int num2);
 float Division(int num1, int num2);
+void Factorial(int num1 , int num2);
 
 int main(void) {
 
@@ -84,6 +85,7 @@ int main(void) {
 
 					printf("El resultado de la DIVISION es: %.2f\n", divisionResultado);
 				}
+				Factorial(num1, num2);
 
 			}
 			else{
@@ -135,6 +137,7 @@ int Menu(int num1, int num2){
 	printf("3-Calcular todas las operaciones\n");
 	printf("4-Informar resultados\n");
 	printf("5-Salir\n");
+	printf("Elija una opcion numerica:\n");
 	scanf("%d", &opcion);
 
 
@@ -194,3 +197,51 @@ float Division(int num1, int num2){
 	return resultado;
 
 }
+void Factorial(int num1 , int num2){
+
+	long int resultadoNum1 = 0;
+	long int resultadoNum2 = 0;
+
+	resultadoNum1 = 1;
+
+	while(num1 > 1){
+
+		resultadoNum1 *= num1;
+		num1--;
+
+	}
+
+	printf("El factorial del primer numero es: %ld\n", resultadoNum1);
+
+	resultadoNum2 = 1;
+
+	while(num2 > 1){
+
+		resultadoNum2 *= num2;
+		num2--;
+
+	}
+
+	printf("El factorial del segundo numero es: %ld\n", resultadoNum2);
+}
+/*
+
+    // Variables a utilizar
+    long int Resultado=0;
+    long int Factorial;
+
+    // Solicitar numero para calcular el factorial
+    printf("Introduzca No. para calcular el factorial ...: ");
+    scanf(" %ld", &Factorial);
+    // Calcular el factorial del numero solicitado
+    Resultado = 1;
+    while(Factorial > 1) {
+       Resultado *= Factorial;
+       printf(" %ld x",Factorial);
+       Factorial--;
+    }
+    printf(" 1 = %ld\n\n",Resultado);
+
+  system("PAUSE");
+  return 0;
+ */
